@@ -1,4 +1,11 @@
 #include "shell.h"
+#include <stdio.h>
+#include <unistd.h>
+#include <stdlib.h>
+#include <sys/types.h>
+#include <string.h>
+#include <sys/wait.h>
+
 
 /**
  * validate - check if a given mumbar exist and execute

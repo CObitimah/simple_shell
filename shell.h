@@ -15,8 +15,6 @@
 #include <fcntl.h>
 #include <errno.h>
 
-
-
 extern char **environ;
 
 int _strlen(char *s);

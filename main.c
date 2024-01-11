@@ -28,7 +28,7 @@ int main(void)
 		if (line[nchars_read - 1] == '\n')
 			line[nchars_read - 1] = '\0';
 
-		token_arr = string_token(line, "\t");
+		token_arr = string_token(line, " \t");
 		if (token_arr[0] == NULL)
 		{
 			free(token_arr);

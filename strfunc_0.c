@@ -31,7 +31,6 @@ int _strcmp(char *s1, char *s2)
 {
 	int y;
 
-	y = 0;
 	for (y = 0; s1[y] != '\0' || s2[y] != '\0'; y++)
 	{
 		if (s1[y] != s2[y])
@@ -50,9 +49,9 @@ int _strlen(char *s)
 {
 	int z;
 
-	z = 0;
 	for (z = 0; s[z] != '\0'; z++)
 		;
+
 	return (z);
 }
 
@@ -64,18 +63,17 @@ int _strlen(char *s)
 
 char *_strdup(const char *str)
 {
-	int lenght;
+	int length = 0;
 	char *ren;
 
-	lenght = 0;
 	if (str == NULL)
 		return (NULL);
 	while (*str++)
-		lenght++;
-	ren = malloc(sizeof(char) * (lenght + 1));
+		length++;
+	ren = malloc(sizeof(char) * (length + 1));
 	if (!ren)
 		return (NULL);
-	for (lenght++; lenght--;)
-		ren[lenght] = *--str;
+	for (length++; length--;)
+		ren[length] = *--str;
 	return (ren);
 }
