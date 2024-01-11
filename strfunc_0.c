@@ -34,7 +34,7 @@ int _strcmp(char *s1, char *s2)
 	y = 0;
 	for (y = 0; s1[y] != '\0' || s2[y] != '\0'; y++)
 	{
-		if (s2[y] != s2[y])
+		if (s1[y] != s2[y])
 			return (s1[y] - s2[y]);
 	}
 	return (0);

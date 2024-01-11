@@ -10,7 +10,7 @@ void free_array(char **args)
 
 	if (args)
 	{
-		for (a = 0; ags[a]; a++)
+		for (a = 0; args[a]; a++)
 			free(args[a]);
 		free(args);
 	}

@@ -7,7 +7,7 @@
  * @status: status of the program
  * Return: 0 if builtin is found, else 1
  */
-int builtin(char **args, char line, int status)
+int builtin(char **args, char *line, int status)
 {
 	char *builtin_cmd[] = {"exit", "env", NULL};
 

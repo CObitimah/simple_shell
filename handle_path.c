@@ -26,7 +26,7 @@ int handleEnv(char **command)
  * @args: command array
  * Return: 0(success)
  */
-char handle_path(char *args)
+char *handle_path(char *args)
 {
 	char path[BUFSIZ];
 	char **path_arr, *temp;
